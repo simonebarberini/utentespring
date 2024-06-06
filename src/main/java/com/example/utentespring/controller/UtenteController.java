@@ -16,7 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
-@RestController
+
+@Controller
 @RequestMapping("/utenti")
 public class UtenteController {
     @Autowired
@@ -40,8 +41,5 @@ public class UtenteController {
     public List<Utente> getAllUtenti() {
         return utenteRepository.findAll();
     }
-
-    
-
 
 }
