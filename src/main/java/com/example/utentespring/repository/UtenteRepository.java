@@ -20,8 +20,10 @@ public class UtenteRepository {
         utenti.add(utente);
     }
 
-    public List<Utente> findAll() {
-        return utenti;
+    public void findAll() {
+        for (Utente utente : utenti) {
+            System.out.println("Username: "+ utente.getUsername()+" Password: "+utente.getPassword());
+        }
     }
 
 }

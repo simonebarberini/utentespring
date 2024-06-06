@@ -39,8 +39,8 @@ public class UtenteController {
     }
 
     @GetMapping("/getUtenti")
-    public List<Utente> getAllUtenti() {
-        return utenteRepository.findAll();
+    public void getAllUtenti() {
+        utenteRepository.findAll();
     }
 
 }
